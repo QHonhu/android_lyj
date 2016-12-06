@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tabhost"
+     >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+    <TabWidget 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@android:id/tabs"
+        ></TabWidget>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@android:id/tabcontent"
+        >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/widget_layout_red"
+            android:orientation="vertical"
+            >
+        <Button
+        android:id="@+id/zhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/zhong" />
+        <Button
+         android:id="@+id/dong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/zhong"
+        android:layout_centerVertical="true"
+        android:text="@string/dong" />
+      <Button
+        android:id="@+id/nan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zhong"
+        android:layout_alignLeft="@id/zhong"
+        android:text="@string/nan" />
+       <Button
+        android:id="@+id/xi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/zhong"
+        android:layout_centerVertical="true"
+        android:text="@string/xi" />
+        <Button
+        android:id="@+id/bei"
+        android:layout_above="@id/zhong"
+        android:layout_alignLeft="@id/zhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bei" />
+        </RelativeLayout>
+        
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/widget_layout_yellow"
+            android:orientation="vertical"
+            >
+        	<TextView 
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+        	    />
+        	<EditText 
+        	android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        	    />
+        	<TextView 
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+        	    />
+        	<EditText 
+        	android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        	    />
+             <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+                 />
+             <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quxiao"
+                 />
+             
+         </LinearLayout>
+          <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/widget_layout"
+            android:orientation="vertical"
+            >
+        	<ImageView 
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tiobe"
+        	    />
+             
+         </LinearLayout>
+        
+    </FrameLayout>
+</LinearLayout>
+</TabHost>
